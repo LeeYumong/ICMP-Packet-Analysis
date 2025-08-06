@@ -18,32 +18,44 @@ focusing on echo requests and replies to better understand packet behavior, timi
           - Google
 
       **Lab Report**
+  
   **Steps Taken**
+
 **Configured Host-Only Network**
 - Ensureing both VMs were assigned Ips in the same subnet via Host-Only adapter.
+
 **Packet Capture**
 - Launching Wireshark on the Ubuntu VM.
 - Set capture filtre to interface traffic. (Default Settings)
+
 **Initiated ICMP Echo Requests**
 - Kali Linux, ran **ping** command targetting **192.168.37.130**.
+
 **Filtered ICMP Traffic**
 - Applied display filter: **icmp** in Wireshark to isolate echo requests and replies/
+
 **Inspected Packet Details**
 - ICMP types, TTL, Sequence Numbers, Identifiers, and Response times.
+
 **Packet Behvaior Observation**
 - Traffic Direction
   - Request: From Kali (192.168.37.128) --> Ubuntu (192.168.37.130)
     - Reply: From Ubuntu (192.168.37.130) --> Kali (192.168.37.128)
+
 **ICMP Packet Types**
 - Type **8** = **Echo Request**
 - Type **0** = **Echo Reply**
+
 **Identifiers & Sequence Numbers**
 - All packets used **id=0x0002**, most likely the default from ping utility.
 - Sequence numbers incremented by one per request, allowing for round-trip time tracking.
+
 **TTL (Time To Live)**
 - All packets show **TTL=64**, default for Linux Systems.
+
 **Round-Trip Indicators**
 - Wireshark showed "reply in #X" and "request in #Y" (#X, #Y are Referring to Numbers), confirming the bidirectional ICMP communication with matching pairs.
+
 **No Packet Loss**
 - All echo requests were answered with replies, indicating that there were no packet loss.
 
