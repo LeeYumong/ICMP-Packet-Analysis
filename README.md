@@ -22,7 +22,7 @@ focusing on echo requests and replies to better understand packet behavior, timi
   **Steps Taken**
 
 **Configured Host-Only Network**
-- Ensureing both VMs were assigned Ips in the same subnet via Host-Only adapter.
+- Ensuring both VMs were assigned Ips in the same subnet via Host-Only adapter.
 
 **Packet Capture**
 - Launching Wireshark on the Ubuntu VM.
