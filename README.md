@@ -12,3 +12,7 @@ Analyzing Internet Control Message Protocol (ICMP) traffic using Wireshark by ca
     - Wireshark
       - VMware Workstation Pro
         - VirutalBox Host-Only Adapter (VMnet1)
+
+**Screenshot**
+- <img width="820" height="656" alt="image" src="https://github.com/user-attachments/assets/4f447db4-a3b3-4981-b798-a8bc60b29bf6" />
+  - 
