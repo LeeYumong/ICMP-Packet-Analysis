@@ -6,7 +6,7 @@ focusing on echo requests and replies to better understand packet behavior, timi
 - Establishing a Host-Only network connection between a Kali Linux and an Ubuntu virtual machine.
   - Launch Wireshark on the Ubuntu VM to monitor incoming network traffic.
     - Sent ICMP echo requests from the Kali Machine to the Ubuntu VM's Ip address.
-      - Apply icmp display filter in Wireshark to isolate ICMP packets for analsis.
+      - Apply icmp display filter in Wireshark to isolate ICMP packets for analysis.
         - Examine captured ICMP packets, focusing on types, codes, TTL, and source/destination information.
 
 **Tools Used**
@@ -32,7 +32,7 @@ focusing on echo requests and replies to better understand packet behavior, timi
 - Kali Linux, ran **ping** command targetting **192.168.37.130**.
 
 **Filtered ICMP Traffic**
-- Applied display filter: **icmp** in Wireshark to isolate echo requests and replies/
+- Applied display filter: **icmp** in Wireshark to isolate echo requests and replies.
 
 **Inspected Packet Details**
 - ICMP types, TTL, Sequence Numbers, Identifiers, and Response times.
