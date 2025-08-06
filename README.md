@@ -26,7 +26,7 @@ focusing on echo requests and replies to better understand packet behavior, timi
 
 **Packet Capture**
 - Launching Wireshark on the Ubuntu VM.
-- Set capture filtre to interface traffic. (Default Settings)
+  - Set capture filtre to interface traffic. (Default Settings)
 
 **Initiated ICMP Echo Requests**
 - Kali Linux, ran **ping** command targetting **192.168.37.130**.
@@ -44,11 +44,11 @@ focusing on echo requests and replies to better understand packet behavior, timi
 
 **ICMP Packet Types**
 - Type **8** = **Echo Request**
-- Type **0** = **Echo Reply**
+  - Type **0** = **Echo Reply**
 
 **Identifiers & Sequence Numbers**
 - All packets used **id=0x0002**, most likely the default from ping utility.
-- Sequence numbers incremented by one per request, allowing for round-trip time tracking.
+  - Sequence numbers incremented by one per request, allowing for round-trip time tracking.
 
 **TTL (Time To Live)**
 - All packets show **TTL=64**, default for Linux Systems.
